@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{\LaTeX \\Lab Quiz}
+\author{Niloy Kumar Mondal}
+\date{\today}
+
+\begin{document}
+   \maketitle
+   \tableofcontents
+   \pagebreak
+   \section{Equation}
+     \subsection{Lecture Codes}
+       \subsubsection{Normal Distribution}
+     
+     \begin{equation}
+         \label{eq:Normal_dist}
+         \mathcal{N}( x_i;\mu,\sigma ) = \frac{1}{2\sqrt{\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+    \end{equation}
+    
+    $ \mathcal{N}( x_i;\mu,\sigma ) = \frac{1}{2\sqrt{\pi}\sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}} $
+
+    Look at equation \eqref{eq:Normal_dist} \\
+    
+      \subsubsection{Alignment Practice}
+    This is another equation:
+    \begin{align}
+        E &= mc^2 \\
+          &  e^{\frac{a^b}{c_d}} 
+    \end{align}
+
+    \subsubsection{Proper use of \emph{Bracket}}
+    Fraction:
+    $(\frac{\frac{a}{b}}{\frac{c}{d}})$ \\
+    But we want to cover the total part.
+      $\left( \frac{\frac{a}{b}}{\frac{c}{d}} \right)$ 
+
+    \subsubsection{Piecewise function \& Simplification}
+    \begin{align}
+        |x| &= 
+        \begin{cases}
+            x &\text{if } x \geq 0 \\
+            -x &\text{if } x < 0
+        \end{cases} \\
+        f(x) &= (x-1)(x+1) \nonumber \\
+        &\qquad + e^x \nonumber \\
+        &=x^2-1+e^x
+    \end{align}
+
+    \subsection{Online Solves}
+      \subsubsection{\text{Vector}}
+      \begin{equation*}
+          \Vec{q}_x = \frac{2g_x}{k-1} \Vec{b}_n, \qquad
+          \Vec{q}_y = \frac{2g_y}{m-1} \Vec{v}_n, \qquad
+          \Vec{p}_{1m} = \Vec{t}_nd-g_x\Vec{b}_n-g_y\Vec{v}_n
+      \end{equation*}
+
+      \subsubsection{Nambu-Goto Action}
+        \begin{equation}
+            S = -T \int \sqrt{-\det(g_{ab})}\, d\tau \, d\sigma
+        \end{equation}
+
+       \subsubsection{Stirling number of second kind}
+       \begin{equation}
+           S(n,k)=\frac{1}{k!} \sum_{i=0}^{k} (-1)^{k-i} \binom{k}{i} i^n 
+           = \sum_{i=0}^{k} \frac{(-1)^{k-i}\,i^n}{(k-i)!i!}
+       \end{equation}
+
+       \subsubsection{Complex piecewise function}
+       \begin{align}
+           F_c(x,y)=
+           \begin{cases}
+               \frac{\partial^2x^3y^x}{\partial x^2}\,+\,
+               \frac{\partial^2\Gamma(x)\log(\tan y)}{\partial x \partial y} &\text{if x,y are real numbers} \\
+               \displaystyle \lim_{Z \to e^{x^{2y}}}\sqrt{Z + \frac{a}{\sqrt{Z+\frac{1}{z+\dots}}}}
+               &\text{otherwise}
+           \end{cases}
+       \end{align}
+
+
+       \subsubsection{Eular Equation}
+         \begin{equation}
+         \label{Eular}
+             e^{i\theta} = \cos\theta + i\sin\theta
+         \end{equation}
+
+         if we put $\theta = \frac{\pi}{2}$ in equation \eqref{Eular},we get the following:
+
+         \begin{align*}
+             e^{i\frac{\pi}{2}} &= \cos\frac{\pi}{2} + i \sin\frac{\pi}{2} \\
+             &=0 + i . 1  \\
+             &=i
+         \end{align*}
+
+
+       \section{Quiz}
+
+
+    \begin{equation}
+        |x| = 
+        \begin{cases}
+        \ x  & \text{ if } x \geq 0\\
+        -x & \text{ if } x < 0 \\
+           \ x  & \text{ if } x \geq 0\\
+        \end{cases}
+    \end{equation}
+    
+\end{document}
